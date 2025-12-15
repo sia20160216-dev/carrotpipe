@@ -25,11 +25,11 @@ export default function Footer() {
             <h4 className="font-bold text-foreground mb-4">연락처</h4>
             <div className="space-y-3">
               <a
-                href="tel:010-5776-5882"
+                href="tel:1668-1321"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
               >
                 <Phone className="w-4 h-4 text-primary" />
-                010-5776-5882
+                1668-1321
               </a>
               <a
                 href="https://open.kakao.com/o/sEbfmt3h"

@@ -22,9 +22,9 @@ export default function CtaSection() {
               size="lg"
               className="bg-phone hover:bg-phone/90 text-white text-lg px-8"
             >
-              <a href="tel:010-5776-5882">
+              <a href="tel:1668-1321">
                 <Phone className="w-5 h-5 mr-2" />
-                010-5776-5882
+                1668-1321
               </a>
             </Button>
             <Button asChild size="lg" className="bg-kakao hover:bg-kakao/90 text-kakao-foreground text-lg px-8">

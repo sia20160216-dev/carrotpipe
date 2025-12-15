@@ -11,7 +11,7 @@ export default function FloatingButtons() {
         size="lg"
         className="bg-phone hover:bg-phone/90 text-white rounded-full w-14 h-14 p-0 shadow-lg shadow-phone/30"
       >
-        <a href="tel:010-5776-5882" aria-label="전화 상담">
+        <a href="tel:1668-1321" aria-label="전화 상담">
           <Phone className="w-6 h-6" />
         </a>
       </Button>

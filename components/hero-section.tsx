@@ -46,7 +46,7 @@ export default function HeroSection() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-phone hover:bg-phone/90 text-white text-lg px-8">
-                <a href="tel:010-5776-5882">
+                <a href="tel:1668-1321">
                   <Phone className="w-5 h-5 mr-2" />
                   전화 연결
                 </a>
@@ -60,7 +60,7 @@ export default function HeroSection() {
             </div>
 
             <p className="text-sm text-muted-foreground mt-4">
-              문자상담 번호는? 👉 <span className="text-secondary font-bold">010-5776-5882</span>
+              문자상담 번호는? 👉 <span className="text-secondary font-bold">1668-1321</span>
             </p>
           </div>
 
