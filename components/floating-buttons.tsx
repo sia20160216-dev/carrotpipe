@@ -21,7 +21,7 @@ export default function FloatingButtons() {
         className="bg-kakao hover:bg-kakao/90 text-kakao-foreground rounded-full w-14 h-14 p-0 shadow-lg shadow-kakao/30"
       >
         <a
-          href="http://pf.kakao.com/_hYsxnb"
+          href="https://open.kakao.com/o/sEbfmt3h"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="카카오톡 상담"

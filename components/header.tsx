@@ -44,7 +44,7 @@ export default function Header() {
               </a>
             </Button>
             <Button asChild className="bg-kakao hover:bg-kakao/90 text-kakao-foreground">
-              <a href="http://pf.kakao.com/_hYsxnb" target="_blank" rel="noopener noreferrer">
+              <a href="https://open.kakao.com/o/sEbfmt3h" target="_blank" rel="noopener noreferrer">
                 <MessageCircle className="w-4 h-4 mr-2" />
                 카톡상담
               </a>
@@ -94,7 +94,7 @@ export default function Header() {
                   </a>
                 </Button>
                 <Button asChild className="flex-1 bg-kakao hover:bg-kakao/90 text-kakao-foreground">
-                  <a href="http://pf.kakao.com/_hYsxnb" target="_blank" rel="noopener noreferrer">
+                  <a href="https://open.kakao.com/o/sEbfmt3h" target="_blank" rel="noopener noreferrer">
                     <MessageCircle className="w-4 h-4 mr-2" />
                     카톡상담
                   </a>

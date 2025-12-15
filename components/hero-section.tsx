@@ -52,7 +52,7 @@ export default function HeroSection() {
                 </a>
               </Button>
               <Button asChild size="lg" className="bg-kakao hover:bg-kakao/90 text-kakao-foreground text-lg px-8">
-                <a href="http://pf.kakao.com/_hYsxnb" target="_blank" rel="noopener noreferrer">
+                <a href="https://open.kakao.com/o/sEbfmt3h" target="_blank" rel="noopener noreferrer">
                   <MessageCircle className="w-5 h-5 mr-2" />
                   카톡 상담
                 </a>

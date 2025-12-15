@@ -32,7 +32,7 @@ export default function Footer() {
                 010-5776-5882
               </a>
               <a
-                href="http://pf.kakao.com/_hYsxnb"
+                href="https://open.kakao.com/o/sEbfmt3h"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
