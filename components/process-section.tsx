@@ -3,7 +3,7 @@ import { Phone, MapPin, Wrench, CheckCircle } from "lucide-react"
 const steps = [
   {
     icon: Phone,
-    title: "전화 / 카톡 상담",
+    title: "전화 / 문자 상담",
     description: "24시간 언제든 연락주세요",
   },
   {

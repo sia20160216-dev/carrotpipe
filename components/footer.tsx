@@ -32,13 +32,12 @@ export default function Footer() {
                 1668-1321
               </a>
               <a
-                href="https://open.kakao.com/o/sEbfmt3h"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="sms:010-5776-5882"
                 className="flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                aria-label="문자 상담"
               >
                 <MessageCircle className="w-4 h-4 text-kakao" />
-                카카오톡 상담
+                문자상담
               </a>
             </div>
           </div>
