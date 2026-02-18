@@ -1,5 +1,8 @@
+"use client"
+
 import { Droplets, Home, Wrench, Building2 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const services = [
   {
@@ -29,6 +32,7 @@ const services = [
 ]
 
 export default function ServicesSection() {
+  useScrollReveal()
   return (
     <section id="services" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -41,7 +45,8 @@ export default function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="bg-card border-border overflow-hidden group hover:border-primary/50 transition-colors"
+              className="scroll-reveal bg-card border-border overflow-hidden group hover:border-primary/50 transition-colors"
+              style={{ transitionDelay: `${index * 100}ms` }}
             >
               <div className="relative h-40 overflow-hidden">
                 <img

@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useState } from "react"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const stats = [
   { value: 15000, suffix: "+", label: "누적 작업 건수" },
@@ -40,6 +41,7 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 }
 
 export default function StatsSection() {
+  useScrollReveal()
   return (
     <section className="py-16 md:py-24 bg-card border-y border-border">
       <div className="container mx-auto px-4">
@@ -52,7 +54,7 @@ export default function StatsSection() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
-            <div key={index} className="text-center">
+            <div key={index} className="scroll-reveal text-center" style={{ transitionDelay: `${index * 100}ms` }}>
               <AnimatedNumber value={stat.value} suffix={stat.suffix} />
               <p className="text-sm md:text-base text-muted-foreground mt-2">{stat.label}</p>
             </div>

@@ -1,5 +1,8 @@
+"use client"
+
 import { Star, Quote } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const reviews = [
   {
@@ -33,6 +36,7 @@ const reviews = [
 ]
 
 export default function ReviewsSection() {
+  useScrollReveal()
   return (
     <section id="reviews" className="py-16 md:py-24">
       <div className="container mx-auto px-4">
@@ -47,7 +51,7 @@ export default function ReviewsSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {reviews.map((review, index) => (
-            <Card key={index} className="bg-card border-border">
+            <Card key={index} className="scroll-reveal bg-card border-border" style={{ transitionDelay: `${index * 100}ms` }}>
               <CardContent className="p-6">
                 <Quote className="w-8 h-8 text-primary/30 mb-4" />
 

@@ -1,4 +1,7 @@
+"use client"
+
 import { Phone, MapPin, Wrench, CheckCircle } from "lucide-react"
+import { useScrollReveal } from "@/hooks/use-scroll-reveal"
 
 const steps = [
   {
@@ -24,6 +27,8 @@ const steps = [
 ]
 
 export default function ProcessSection() {
+  useScrollReveal()
+
   return (
     <section id="process" className="py-16 md:py-24 bg-card border-y border-border">
       <div className="container mx-auto px-4">
@@ -34,7 +39,11 @@ export default function ProcessSection() {
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative text-center">
+            <div
+              key={index}
+              className="relative text-center scroll-reveal"
+              style={{ transitionDelay: `${index * 100}ms` }}
+            >
               {/* Connector Line */}
               {index < steps.length - 1 && (
                 <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] right-[calc(-50%+2rem)] h-0.5 bg-border" />
