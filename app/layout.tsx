@@ -1,6 +1,7 @@
 import type React from "react"
 import type { Metadata, Viewport } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import Script from "next/script"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -69,9 +70,26 @@ export default function RootLayout({
           crossOrigin="anonymous"
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
+        {/* Boraware click-protection scripts */}
+        <Script id="boraware-init" strategy="afterInteractive">
+          {`var protect_id = 'j470';`}
+        </Script>
+
+        <Script
+          id="boraware-external"
+          src="//script.boraware.kr/protect_script_v2.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body className="antialiased">
         {children}
+        {/* noscript fallback for Boraware */}
+        <noscript
+          dangerouslySetInnerHTML={{
+            __html:
+              '<img src="//script.boraware.kr/protect_nbora.php?protect_id=j470" style="display:none;width:0;height:0;" border="0" />',
+          }}
+        />
         <Analytics />
       </body>
     </html>
